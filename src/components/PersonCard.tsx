@@ -5,5 +5,10 @@ interface IPersonCard {
 }
 
 export const PersonCard = ({ person }: IPersonCard) => {
-  return <p>Person Card</p>;
+  return (
+    <>
+      <h3>{person.name}</h3>
+      {person.image ? <img src={person.image.medium}></img> : <></>}
+    </>
+  );
 };
