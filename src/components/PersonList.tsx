@@ -11,7 +11,7 @@ export const PersonList = ({ personSearch }: IPersonList) => {
   const [people, setPeople] = useState<Array<Person>>([]);
 
   useEffect(() => {
-    searchPeople("Ellen")
+    searchPeople(personSearch)
       .then(({ data }) => {
         setPeople(data);
       })
