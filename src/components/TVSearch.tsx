@@ -5,28 +5,26 @@ interface ITVSearch {
 }
 
 export const TVSearch = ({ setShowSearch }: ITVSearch) => {
-  const [showSearchInput, setShowSearchInput] = useState("");
-  const handleSearchSubmit = (event: any) => {
+  const [showSearchInput, setShowSearchInput] = useState<string>("");
+  const handleTVSearch = (event: React.MouseEvent) => {
     event.preventDefault();
     setShowSearch(showSearchInput);
     setShowSearchInput("");
   };
 
   return (
-    <>
-      <form>
-        <label>
-          Search shows by title:
-          <input
-            type="text"
-            value={showSearchInput}
-            onChange={(event) => {
-              setShowSearchInput(event.target.value);
-            }}
-          ></input>
-        </label>
-        <button onClick={handleSearchSubmit}>Search</button>
-      </form>
-    </>
+    <form>
+      <label>
+        Search shows by title:
+        <input
+          type="text"
+          value={showSearchInput}
+          onChange={(event) => {
+            setShowSearchInput(event.target.value);
+          }}
+        ></input>
+      </label>
+      <button onClick={handleTVSearch}>Search</button>
+    </form>
   );
 };

@@ -7,3 +7,7 @@ export const searchShows = (q: string) => {
     params: { q },
   });
 };
+
+export const searchPeople = (q: string) => {
+  return tvApi.get("search/people", { params: { q } });
+};
