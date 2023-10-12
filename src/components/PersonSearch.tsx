@@ -6,6 +6,12 @@ interface IPersonSearch {
 
 export const PersonSearch = ({ setPersonSearch }: IPersonSearch) => {
   const [personSearchInput, setPersonSearchInput] = useState<string>("");
+  const handlePersonSearch = (event: React.MouseEvent) => {
+    event.preventDefault();
+    setPersonSearch(personSearchInput);
+    setPersonSearchInput("");
+  };
+
   return (
     <form>
       <label>
@@ -17,7 +23,7 @@ export const PersonSearch = ({ setPersonSearch }: IPersonSearch) => {
           }}
         ></input>
       </label>
-      <button>Search</button>
+      <button onClick={handlePersonSearch}>Search</button>
     </form>
   );
 };
