@@ -7,19 +7,21 @@ export const PersonList = () => {
   const [people, setPeople] = useState<Array<Person>>([]);
 
   useEffect(() => {
-    searchPeople("Ellen").then(({ data }) => {
-      setPeople(data);
-    }).catch((err) => {
-      console.log(err, "PersonListErr")
-    })
+    searchPeople("Ellen")
+      .then(({ data }) => {
+        setPeople(data);
+      })
+      .catch((err) => {
+        console.log(err, "PersonListErr");
+      });
   }, []);
 
   return (
     <>
       <h3>PERSON LIST HERE</h3>
-      <PersonCard></PersonCard>
-      <PersonCard></PersonCard>
-      <PersonCard></PersonCard>
+      {people.map(({ person }) => {
+        return <PersonCard person={person} key={person.id} />;
+      })}
     </>
   );
 };
