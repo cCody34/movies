@@ -1,7 +1,7 @@
-import { Show } from "../types";
+import { ShowInfo } from "../types";
 
 interface ITVCard {
-  show: Show;
+  show: ShowInfo;
 }
 
 export const TVCard = ({ show }: ITVCard) => {
