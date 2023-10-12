@@ -3,7 +3,11 @@ import { Person } from "../types";
 import { PersonCard } from "./PersonCard";
 import { useEffect, useState } from "react";
 
-export const PersonList = () => {
+interface IPersonList {
+  personSearch: string;
+}
+
+export const PersonList = ({ personSearch }: IPersonList) => {
   const [people, setPeople] = useState<Array<Person>>([]);
 
   useEffect(() => {
