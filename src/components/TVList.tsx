@@ -16,7 +16,7 @@ export const TVList = ({ showSearch }: ITVList) => {
         setShows(data);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err, "TVListError");
       });
   }, [showSearch]);
 
