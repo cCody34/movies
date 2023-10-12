@@ -10,7 +10,12 @@ export const PersonSearch = ({ setPersonSearch }: IPersonSearch) => {
     <form>
       <label>
         Search people:
-        <input></input>
+        <input
+          value={personSearchInput}
+          onChange={(event) => {
+            setPersonSearchInput(event.target.value);
+          }}
+        ></input>
       </label>
       <button>Search</button>
     </form>
