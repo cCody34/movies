@@ -3,7 +3,7 @@ import { useState } from "react";
 import { TVSearch } from "../TVSearch";
 
 export const TVShows = () => {
-  const [showSearch, setShowSearch] = useState<null | string>("");
+  const [showSearch, setShowSearch] = useState<string>("");
   return (
     <>
       <TVSearch setShowSearch={setShowSearch} />
