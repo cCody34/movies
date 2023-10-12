@@ -1,4 +1,4 @@
-export type Show = {
+export type ShowInfo = {
   genres: string[];
   id: number;
   language: string;
@@ -7,7 +7,13 @@ export type Show = {
   summary: string;
   type: string;
   url: string;
+} & {
   [key: string]: any;
+};
+
+export type Show = {
+  score: number;
+  show: ShowInfo;
 };
 
 type PersonImage = {
