@@ -6,7 +6,7 @@ interface ITVSearch {
 
 export const TVSearch = ({ setShowSearch }: ITVSearch) => {
   const [showSearchInput, setShowSearchInput] = useState<string>("");
-  const handleTVSearch = (event: any) => {
+  const handleTVSearch = (event: React.MouseEvent) => {
     event.preventDefault();
     setShowSearch(showSearchInput);
     setShowSearchInput("");
