@@ -6,7 +6,7 @@ interface ITVSearch {
 
 export const TVSearch = ({ setShowSearch }: ITVSearch) => {
   const [showSearchInput, setShowSearchInput] = useState<string>("");
-  const handleSearchSubmit = (event: any) => {
+  const handleTVSearch = (event: any) => {
     event.preventDefault();
     setShowSearch(showSearchInput);
     setShowSearchInput("");
@@ -24,7 +24,7 @@ export const TVSearch = ({ setShowSearch }: ITVSearch) => {
           }}
         ></input>
       </label>
-      <button onClick={handleSearchSubmit}>Search</button>
+      <button onClick={handleTVSearch}>Search</button>
     </form>
   );
 };
