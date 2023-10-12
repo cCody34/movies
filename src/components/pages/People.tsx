@@ -1,9 +1,11 @@
-import { PersonList } from "../PersonList"
+import { PersonList } from "../PersonList";
+import { PersonSearch } from "../PersonSearch";
 
 export const People = () => {
-    return (
-        <>
-        <PersonList />
-        </>
-    )
-}
+  return (
+    <>
+      <PersonSearch />
+      <PersonList />
+    </>
+  );
+};
