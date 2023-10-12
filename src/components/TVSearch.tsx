@@ -13,20 +13,18 @@ export const TVSearch = ({ setShowSearch }: ITVSearch) => {
   };
 
   return (
-    <>
-      <form>
-        <label>
-          Search shows by title:
-          <input
-            type="text"
-            value={showSearchInput}
-            onChange={(event) => {
-              setShowSearchInput(event.target.value);
-            }}
-          ></input>
-        </label>
-        <button onClick={handleSearchSubmit}>Search</button>
-      </form>
-    </>
+    <form>
+      <label>
+        Search shows by title:
+        <input
+          type="text"
+          value={showSearchInput}
+          onChange={(event) => {
+            setShowSearchInput(event.target.value);
+          }}
+        ></input>
+      </label>
+      <button onClick={handleSearchSubmit}>Search</button>
+    </form>
   );
 };
