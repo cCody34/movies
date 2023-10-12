@@ -5,7 +5,6 @@ interface ITVCard {
 }
 
 export const TVCard = ({ show }: ITVCard) => {
-  console.log(show, "SHOOWWW");
   return (
     <>
       <h3>{show.name}</h3>
