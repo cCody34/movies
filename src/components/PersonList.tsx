@@ -18,7 +18,7 @@ export const PersonList = ({ personSearch }: IPersonList) => {
       .catch((err) => {
         console.log(err, "PersonListErr");
       });
-  }, []);
+  }, [personSearch]);
 
   return (
     <>
