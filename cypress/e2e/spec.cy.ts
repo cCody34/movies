@@ -13,5 +13,10 @@ describe("Test1", () => {
       cy.get('[data-testid="search-shows-link"]').click();
       cy.url().should("eq", "http://localhost:5173/shows");
     });
+    it("has an input box", () => {
+      cy.get('[data-testid="search-shows-link"]').click();
+      cy.get('[data-testid="search-shows-input"]').type("Greys");
+      cy.get('[data-testid="search-shows-button"]').click();
+    });
   });
 });
