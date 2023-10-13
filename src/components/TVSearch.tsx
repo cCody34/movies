@@ -17,6 +17,7 @@ export const TVSearch = ({ setShowSearch }: ITVSearch) => {
       <label>
         Search shows by title:
         <input
+          data-testid="search-shows-input"
           type="text"
           value={showSearchInput}
           onChange={(event) => {
@@ -24,7 +25,9 @@ export const TVSearch = ({ setShowSearch }: ITVSearch) => {
           }}
         ></input>
       </label>
-      <button onClick={handleTVSearch}>Search</button>
+      <button data-testid="search-shows-button" onClick={handleTVSearch}>
+        Search
+      </button>
     </form>
   );
 };
