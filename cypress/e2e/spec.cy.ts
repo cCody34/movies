@@ -5,4 +5,13 @@ describe("Test1", () => {
   it("has a header that says header", () => {
     cy.contains("Header");
   });
+  describe("Search TV shows", () => {
+    it("has a searchTVShows link", () => {
+      cy.get('[data-testid="search-shows-link"]');
+    });
+    it("redirects to /shows", () => {
+      cy.get('[data-testid="search-shows-link"]').click();
+      cy.url().should("eq", "http://localhost:5173/shows");
+    });
+  });
 });
