@@ -58,3 +58,9 @@ Running the following command in the CLI will install the necessary dependencies
 ### Node version required
 
 The minimum required node version to run this project is 18.16.0/
+
+### Running this project locally
+
+To run this project locally then run the following command in the CLI and open the host link provided in your browser:
+
+```npm run dev```
