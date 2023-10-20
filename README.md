@@ -54,3 +54,7 @@ To open the repo run the following command in the CLI:
 Running the following command in the CLI will install the necessary dependencies and devDependencies:
 
 ```npm i```
+
+### Node version required
+
+The minimum required node version to run this project is 18.16.0/
