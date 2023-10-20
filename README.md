@@ -34,3 +34,11 @@ I am completing this additional project for many reasons:
 - To use Firebase to implement user authentication
 - To explore Sass for styling
 - To continue developing my coding skills independently
+
+## Running this project locally
+
+### Cloning this repo
+
+This repo can be cloned by running the following command in the CLI:
+
+```git clone https://github.com/cCody34/tv.git```
