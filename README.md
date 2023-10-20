@@ -42,3 +42,10 @@ I am completing this additional project for many reasons:
 This repo can be cloned by running the following command in the CLI:
 
 ```git clone https://github.com/cCody34/tv.git```
+
+### Opening the local repo
+
+To open the repo run the following command in the CLI:
+
+```cd tv```
+
