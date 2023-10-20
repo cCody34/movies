@@ -49,3 +49,8 @@ To open the repo run the following command in the CLI:
 
 ```cd tv```
 
+### Installing dependencies
+
+Running the following command in the CLI will install the necessary dependencies and devDependencies:
+
+```npm i```
