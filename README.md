@@ -25,3 +25,12 @@ I have also completed a group project with 4 other developers, which is a multi-
 The hosted version of this game can be found at: https://nc-anagrams.netlify.app/
 
 The link to the repository for this project is https://github.com/chris-butterworth/nc-final-project
+
+## Project Aims
+
+I am completing this additional project for many reasons:
+- To learn and gain experience using TypeScript
+- To explore a front end testing framework, i.e. Cypress
+- To use Firebase to implement user authentication
+- To explore Sass for styling
+- To continue developing my coding skills independently
