@@ -1,4 +1,5 @@
 import { ShowInfo } from "../types";
+import "../components/TVCard.scss";
 
 interface ITVCard {
   show: ShowInfo;
@@ -6,7 +7,7 @@ interface ITVCard {
 
 export const TVCard = ({ show }: ITVCard) => {
   return (
-    <>
+    <div className="tv-card">
       <h3>{show.name}</h3>
       <p>Summary: </p>
       <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>
@@ -23,6 +24,6 @@ export const TVCard = ({ show }: ITVCard) => {
         <></>
       )}
       {show.type ? <p>Type: {show.type}</p> : <></>}
-    </>
+    </div>
   );
 };
