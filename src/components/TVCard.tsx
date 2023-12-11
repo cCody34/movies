@@ -6,7 +6,7 @@ interface ITVCard {
 
 export const TVCard = ({ show }: ITVCard) => {
   return (
-    <>
+    <div>
       <h3>{show.name}</h3>
       <p>Summary: </p>
       <div dangerouslySetInnerHTML={{ __html: show.summary }}></div>
@@ -23,6 +23,6 @@ export const TVCard = ({ show }: ITVCard) => {
         <></>
       )}
       {show.type ? <p>Type: {show.type}</p> : <></>}
-    </>
+    </div>
   );
 };
