@@ -1,4 +1,5 @@
 import { ShowInfo } from "../types";
+import "../components/TVCard.scss";
 
 interface ITVCard {
   show: ShowInfo;
