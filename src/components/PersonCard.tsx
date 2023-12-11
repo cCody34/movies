@@ -1,4 +1,5 @@
 import { PersonInfo } from "../types";
+import "./PersonCard.scss";
 
 interface IPersonCard {
   person: PersonInfo;
