@@ -8,6 +8,7 @@ import { People } from "./components/pages/People";
 import { useState } from "react";
 
 function App() {
+  const [path, setPath] = useState("/");
   return (
     <div>
       <Header></Header>
