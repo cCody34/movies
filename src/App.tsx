@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/pages/Home";
 import { TVShows } from "./components/pages/TVShows";
 import { People } from "./components/pages/People";
+import { useState } from "react";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <NavBar></NavBar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shows" element={<TVShows/>}/>
-        <Route path="/people" element={<People/>}/>
+        <Route path="/shows" element={<TVShows />} />
+        <Route path="/people" element={<People />} />
       </Routes>
     </div>
   );
